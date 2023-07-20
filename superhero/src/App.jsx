@@ -6,12 +6,11 @@ import { Header, HeroCard, HeroForm, SearchWidget, HeroList} from './components'
 import './App.css';
 
 const App = () => {
+  
     return (
       <>
         {/* <Header /> */}
-        <SearchWidget />
-        <HeroList />
-        <HeroCard />
+        <SearchWidget />       
       </>
     )
 };
