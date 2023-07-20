@@ -1,6 +1,7 @@
 import React from "react";
 import * as Pages from '../src/pages';
 import {Routes, Route} from 'react-router-dom';
+import { Header, HeroCard, HeroForm, SearchWidget, HeroList} from './components';
 // import { Header } from './components';
 import "./app.css"
 
@@ -16,9 +17,8 @@ const  App = () => {
           {/* <Route path="/heroes/:id" element={<Pages.HeroPage  />}/> */}
           {/* <Route path="*" element={<Pages.PageNotFound  />} /> */}
         {/* </Route> */}
+        <SearchWidget /> 
      </Routes>
     </html>
   )
 }
-
-export default App;
