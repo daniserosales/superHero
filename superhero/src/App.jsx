@@ -17,8 +17,10 @@ const  App = () => {
           {/* <Route path="/heroes/:id" element={<Pages.HeroPage  />}/> */}
           {/* <Route path="*" element={<Pages.PageNotFound  />} /> */}
         {/* </Route> */}
-        <SearchWidget /> 
+        {/* <SearchWidget />  */}
      </Routes>
     </html>
   )
 }
+
+export default App;

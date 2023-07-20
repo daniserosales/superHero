@@ -4,7 +4,9 @@ import { HeroForm, HeroList } from '../';
 export default function SearchWidget () {
 
     const [heroData, setHeroData] = useState([]);
-    const [searchString, setSearchString] = useState("");    
+    const [searchString, setSearchString] = useState("");  
+    const [formSubmitted, setFormSubmitted] = useState(false); 
+    const [showHeroList, setShowHeroList] = useState(false); 
    
     useEffect(() => {
 
@@ -20,12 +22,15 @@ export default function SearchWidget () {
         
     }, [searchString]);
     
+    
+    
     function handleSearch(userInput){
-        setSearchString(userInput);        
+        setSearchString(userInput);    
+        setFormSubmitted(true);    
     }
 
     return <>
         <HeroForm handleSearch={handleSearch} lastSearch={searchString}/>
-        <HeroList heroData={heroData} /> 
+        {formSubmitted && <HeroList heroData={heroData} />}
         </>
 };
