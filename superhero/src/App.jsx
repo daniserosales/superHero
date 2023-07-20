@@ -8,7 +8,7 @@ import "./app.css"
 const  App = () => {
   console.log("banana")
   return (
-    <>
+    <html>
      <Routes>
         {/* <Route path="" element={<Header  />}> */}
           <Route path="/" element={<Pages.Homepage />}></Route>
@@ -17,7 +17,7 @@ const  App = () => {
           {/* <Route path="*" element={<Pages.PageNotFound  />} /> */}
         {/* </Route> */}
      </Routes>
-    </>
+    </html>
   )
 }
 
